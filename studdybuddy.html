@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Min hemsida – Video/lathund</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body class="page-background">
+    <header>
+      <nav aria-label="Huvudnavigation">
+        <a href="index.html">Startsida</a>
+        <a href="studdybuddy.html" aria-current="page">Studdybuddy</a>
+        <a href="about.html">Om mig</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="study-music">
+        <h1>Studymusic</h1>
+        <iframe
+          width="280"
+          height="157"
+          src="https://www.youtube-nocookie.com/embed/rFZHOHl-L8A?si=1z1fsJBBDvtp1FaT"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+        <p>chill asf</p>
+      </section>
+
+      <section class="lathund">
+        <h2>Lathund</h2>
+
+        <h3>&lt;!DOCTYPE html&gt;</h3>
+        <p>
+          Ska stå allra högst upp i dokumentet. Den talar om för webbläsaren att
+          sidan använder modern HTML.
+        </p>
+
+        <h3>&lt;html lang="sv"&gt;</h3>
+        <p>
+          Startar HTML-dokumentet och visar att sidans språk är svenska. Attributet
+          <code>lang="sv"</code> hjälper bland annat skärmläsare och sökmotorer
+          att förstå vilket språk sidan använder.
+        </p>
+
+        <h3>&lt;head&gt;</h3>
+        <p>
+          Innehåller information om sidan som normalt inte syns direkt på själva
+          webbsidan, till exempel sidans titel, teckenkodning och CSS-fil.
+        </p>
+
+        <h3>&lt;meta charset="utf-8"&gt;</h3>
+        <p>
+          Gör att svenska tecken som å, ä och ö visas korrekt.
+        </p>
+
+        <h3>&lt;title&gt;</h3>
+        <p>
+          Bestämmer texten som syns på webbläsarens flik, till exempel
+          <code>&lt;title&gt;Min hemsida – Video/lathund&lt;/title&gt;</code>
+          för denna sida.
+        </p>
+        <div class="utdata-exempel">
+          <strong>Exempel på text i fliken:</strong>
+          <p>Min hemsida – Video/lathund</p>
+        </div>
+
+        <h3>&lt;body&gt;</h3>
+        <p>
+          Innehåller allt innehåll som besökaren kan se på hemsidan, till exempel
+          rubriker, bilder, texter, länkar och videor.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2>Text och rubriker</h2>
+
+        <h3>&lt;h1&gt;, &lt;h2&gt; osv.</h3>
+        <p>
+          Används till rubriker. Varje sida bör normalt ha en
+          huvudrubrik.
+        </p>
+
+        <p>
+          Används till underrubriker. <code>&lt;h2&gt;</code> är en större
+          underrubrik än <code>&lt;h3&gt;</code>.
+        </p>
+        <div class="utdata-exempel">
+          <strong>Exempel:</strong>
+          <h2>En underrubrik</h2>
+          <h3>En mindre underrubrik</h3>
+        </div>
+
+        <h3>&lt;p&gt;</h3>
+        <p>
+          Skapar ett stycke med vanlig text.
+        </p>
+        <div class="utdata-exempel">
+          <strong>Exempel:</strong>
+          <p>Det här är ett stycke text på webbsidan.</p>
+        </div>
+
+        <h3>&lt;code&gt;</h3>
+        <p>
+          Används när man vill visa kod i en text, till exempel
+          <code>&lt;p&gt;</code>.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2>Länkar, bilder och media</h2>
+
+        <h3>&lt;a href="..."&gt;</h3>
+        <p>
+          Skapar en länk. Exempel: <code>&lt;a href="about.html"&gt;Om mig&lt;/a&gt;</code>.
+          När man klickar på länken öppnas sidan <code>about.html</code>.
+        </p>
+        <div class="utdata-exempel">
+          <strong>Exempel:</strong>
+          <a href="about.html">Om mig</a>
+        </div>
+
+        <h3>&lt;img&gt;</h3>
+        <p>
+          Visar en bild. Attributet <code>src</code> innehåller bildens adress
+          eller filnamn.
+        </p>
+
+        <h3>alt="..."</h3>
+        <p>
+          Är en alternativ text som beskriver bilden. Den används bland annat av
+          skärmläsare och visas om bilden inte kan laddas.
+        </p>
+
+        <p class="kod-exempel">
+          <code>&lt;img src="doggo1.jpg" alt="En brun hund"&gt;</code>
+        </p>
+        <div class="utdata-exempel">
+          <strong>Exempel:</strong>
+          <img src="doggo1.jpg" alt="En brun hund">
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Videoinbäddning</h2>
+
+        <h3>&lt;iframe&gt;</h3>
+        <p>
+          Används för att bädda in innehåll från en annan webbplats, till exempel
+          en YouTube-video.
+        </p>
+
+        <h3>&lt;header&gt;</h3>
+        <p>
+          Innehåller sidans översta del. På denna hemsida ligger navigeringsmenyn
+          i sidhuvudet.
+        </p>
+
+        <h3>&lt;nav&gt;</h3>
+        <p>
+          Innehåller länkar som hjälper besökaren att navigera mellan olika sidor
+          på webbplatsen.
+        </p>
+
+        <h3>&lt;main&gt;</h3>
+        <p>
+          Innehåller sidans huvudinnehåll, till exempel rubriker, texter, bilder
+          och videor.
+        </p>
+
+        <h3>&lt;section&gt;</h3>
+        <p>
+          Delar in innehållet i tydliga avsnitt. På lathundssidan används den för
+          att dela upp koden i olika kategorier.
+        </p>
+
+        <h3>&lt;footer&gt;</h3>
+        <p>
+          Innehåller sidans nedersta del, till exempel information om hemsidan.
+        </p>
+      </section>
+
+      <section class="lathund">
+        <h2>CSS-koppling</h2>
+
+        <h3>&lt;link rel="stylesheet" href="styles.css"&gt;</h3>
+        <p>
+          Kopplar HTML-sidan till CSS-filen. I <code>styles.css</code> bestämmer
+          du till exempel färger, textstorlek, marginaler och hur bilder ska se ut.
+        </p>
+
+        <h3>class="..."</h3>
+        <p>
+          Ger ett HTML-element ett namn som CSS kan använda för att ändra dess
+          utseende. Exempelvis används <code>class="startsida-bild"</code> för
+          att centrera bilden på startsidan.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Bilder och videor från
+        <a href="http://www.pexels.com">http://www.pexels.com</a>, ingen
+        upphovsrätt på samtliga
+      </p>
+    </footer>
+  </body>
+</html>
