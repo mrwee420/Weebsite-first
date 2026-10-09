@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ja, vad ska man säga?</title>
+    <style>
+        /* Nollställning och grundinställningar */ä
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('bakgrund.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Huvudbehållare med frostad mörk glassmorphism-effekt */
+        .container {
+            background: rgba(10, 12, 26, 0.75);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 950px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 240, 255, 0.25);
+        }
+
+        /* Centrerad rubrik med animerad färggradient baserad på färgpaletten */
+        h1,
+        .text-content .salutation {
+            background: linear-gradient(90deg, #00eaff, #ff4f9a, #ffb347, #a66bff, #00eaff);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 6s ease infinite;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            filter: drop-shadow(0px 0px 12px rgba(0, 234, 255, 0.4));
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Flexbox-layout för placering på rad */
+        .profile-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        /* Profilbildsbehållare */
+        .image-wrapper {
+            flex-shrink: 0;
+            padding: 2px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #00eaff, #ff82b2, #ffad72, #00eaff);
+            box-shadow: 0 0 25px rgba(0, 234, 255, 0.35), 0 0 15px rgba(255, 130, 178, 0.25);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+        }
+
+        /* Styling för profilbilden theguy.gif */
+        .profile-img {
+            width: 260px;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Hover-effekt på bilden */
+        .image-wrapper:hover {
+            transform: scale(1.06) rotate(1deg);
+            box-shadow: 0 0 35px rgba(255, 130, 178, 0.7), 0 0 20px rgba(0, 234, 255, 0.5);
+        }
+
+        /* Presentationstext */
+        .text-content {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #e2e8f0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+        }
+
+        .text-content p {
+            margin-bottom: 18px;
+        }
+
+        .text-content .salutation {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0;
+            filter: drop-shadow(0 0 10px rgba(0, 234, 255, 0.5));
+        }
+
+        /* Responsiv design med Media Queries för mindre skärmar */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+                margin-bottom: 25px;
+            }
+
+            .profile-img {
+                width: 210px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ja, vad ska man säga?</h1>
+        
+        <div class="profile-section">
+            <div class="image-wrapper">
+                <img src="theguy2.gif" alt="Tobias Westman profilbild" class="profile-img">
+            </div>
+            
+            <div class="text-content">
+                <p>Mitt namn är Tobias Westman jag är 37 år gammal utbildad snickare. Jag började mitt arbetsliv med att jobba som support åt två av Sveriges största internet leverantörer, har de senaste åren jobbat som ventilationsmotör, men eftersom de varit dåligt med jobb senaste tiden nu sökt mig hit för att vidga mina vyer.</p>
+                <p>Jag hoppas att den här utbildningen ska bli rolig, lärorik och att lära känna lite nya ansikten, samt hoppas att jag ska lyckas hålla mig kvar i skolbänken efter de 20år långa uppehåll från den då jag har en tendens till myror i brallan.</p>
+                <p class="salutation">Fridens liljor!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
